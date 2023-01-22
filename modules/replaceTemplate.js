@@ -11,11 +11,14 @@ module.exports = (htmlStr, loan)=>{ // fat arrow function or lambda
 
     //Calculate the annuity
     const i = Number(loan.interest) / 100 / 12;
-    let pow = i + 1;
+    const pv = Number(loan.loanAmount);
     const n = Number(loan.loanTermYears) * 12;
+    let pow = (1+i);
     pow = Math.pow(pow, -n);
-    const annuity = (i / (1 - pow)) * Number(loan.loanAmount);
-    output = output.replace(/{%AMOUNTOWED%}/g, annuity);
+    pow = 1-pow;
+    owed = (i*pv) / pow;
+    owed = owed * n;
+    output = output.replace(/{%AMOUNTOWED%}/g, owed);
 
     return output;
 }

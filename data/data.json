@@ -1,47 +1,57 @@
 [
-    {
-        "id": 0,
-        "courseName": "IFT 101",
-        "image": "📚",
-        "from": "Information Technology",
-        "instructor": "David Alderman, Tatiana Walsh",
-        "credits": "4",
-        "description": "Introduction to Information Technology"
-    },
-    {
-        "id": 1,
-        "courseName": "INT 601",
-        "image": "🕉",
-        "from": "Management",
-        "instructor": "David Alderman, Tatiana Walsh",
-        "credits": "3",
-        "description": "International Culture"
-      },
-      {
-        "id": 2,
-        "courseName": "IFT 201",
-        "image": "📯",
-        "from": "Information Technology",
-        "instructor": "David Alderman, Tatiana Walsh",
-        "credits": "3",
-        "description": "Virtualization"
-      },
-      {
-        "id": 3,
-        "courseName": "ART 300",
-        "image": "😱",
-        "from": "Arts",
-        "instructor": "David Alderman, Tatiana Walsh",
-        "credits": "3",
-        "description": "Virtualization"
-      },
-      {
-        "id": 4,
-        "course": "INC 401",
-        "image": "🐇",
-        "from": "Veterinary  Science",
-        "instructor": "David Alderman, Tatiana Walsh",
-        "credits": "3",
-        "description": "Animal Science"
-      }
+  {
+    "id": "0",
+    "customerName": "Bob",
+    "phoneNumber": "555-555-1234",
+    "address": "Apartment 100",
+    "loanAmount": "12500",
+    "interest": "1",
+    "loanTermYears": "4",
+    "loanType": "Subsidized",
+    "description": "Student loan"
+  },
+  {
+    "id": "1",
+    "customerName": "Steve",
+    "phoneNumber": "555-555-2341",
+    "address": "Apartment 105",
+    "loanAmount": "3500",
+    "interest": "2",
+    "loanTermYears": "4",
+    "loanType": "Subsidized",
+    "description": "Student loan"
+  },
+  {
+    "id": "2",
+    "customerName": "Susan",
+    "phoneNumber": "555-555-3412",
+    "address": "Apartment 123",
+    "loanAmount": "10000",
+    "interest": "3",
+    "loanTermYears": "4",
+    "loanType": "Subsidized",
+    "description": "Student loan"
+  },
+  {
+    "id": "3",
+    "customerName": "Kristine",
+    "phoneNumber": "555-555-4123",
+    "address": "Apartment 223",
+    "loanAmount": "5000",
+    "interest": "1",
+    "loanTermYears": "4",
+    "loanType": "Subsidized",
+    "description": "Student loan"
+  },
+  {
+    "id": "4",
+    "customerName": "Billy",
+    "phoneNumber": "555-555-4321",
+    "address": "Apartment 344",
+    "loanAmount": "1500",
+    "interest": "3",
+    "loanTermYears": "4",
+    "loanType": "Subsidized",
+    "description": "Student loan"
+  }
 ]

@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Megrim|Nunito+Sans:400,900"
       rel="stylesheet"
     />
-    <title>{%NAME%} {%IMAGE%} /// Course List</title>
+    <title>{%NAME%} /// Loan Domain</title>
 
     <style>
       html {
@@ -37,7 +37,7 @@
         width: 95rem;
         margin: 0 auto;
       }
-      .course {
+      .loan {
         width: 60rem;
         margin: 0 auto;
         margin-top: 9rem;
@@ -45,8 +45,8 @@
         box-shadow: 0 3rem 6rem 1rem rgba(0, 0, 0, 0.2);
         position: relative;
       }
-      .course__back:link,
-      .course__back:visited {
+      .loan__back:link,
+      .loan__back:visited {
         position: absolute;
         top: 2rem;
         left: 2rem;
@@ -64,11 +64,11 @@
         display: flex;
         align-items: center;
       }
-      .course__back:hover,
-      .course__back:active {
+      .loan__back:hover,
+      .loan__back:active {
         background-color: #79e17b;
       }
-      .course__name {
+      .loan__name {
         background: linear-gradient(to bottom, #9be15d, #00e3ae);
         padding: 1rem;
         font-family: 'Megrim', sans-serif;
@@ -77,13 +77,13 @@
         text-align: center;
         word-spacing: 2px;
       }
-      .course__info {
+      .loan__info {
         padding: 2rem 2rem;
         font-size: 1.6rem;
         line-height: 1.8;
       }
-      .course__link:link,
-      .course__link:visited {
+      .loan__link:link,
+      .loan__link:visited {
         display: block;
         background-color: #79e17b;
         color: white;
@@ -113,27 +113,25 @@
 
   <body>
     <div class="container">
-      <h1>📚 University Course List 📚</h1>
-      <figure class="course">
-        <a href="/" class="course__back">
+      <h1>💲 Loan Amounts 💲</h1>
+      <figure class="loan">
+        <a href="/" class="loan__back">
           <span class="emoji-left">👈</span>Back
         </a>
   
-        <h2 class="course__name">{%NAME%}</h2>
-        <div class="course__info">
-          <p><span class="emoji-left">🗞</span>Major in: {%FROM%}</p>
-        </div>
-        <div class="course__info">
-             <span><class="emoji-left">🎓</span>Instructors: {%INSTRUCTOR%}
+        <h2 class="loan__name">{%NAME%}</h2>
+
+        <div class="loan__info">
+          <p><span><class="emoji-left">📞</span>Phone: {%PHONE%}</p>
+          <p><span><class="emoji-left">🌎</span>Address: {%FROM%}</p>
+          <p><span><class="emoji-left">💰</span>Loan Amount: {%AMOUNT%}</p>
+          <p><span><class="emoji-left">💳</span>Interest: {%INTEREST%}%</p>
+          <p><span><class="emoji-left">📆</span>Years: {%YEARS%}</p>
+          <p><span><class="emoji-left">👉</span>Type: {%TYPE%}</p>
+          <p><span><class="emoji-left">👉</span>Description: {%DESCRIPTION%}</p>
+          <p><span><class="emoji-left">💲</span>Total Amount Owed: {%AMOUNTOWED%}</p>
         </div>
 
-        <a href="#" class="course__info">
-          <span> 🧮 Credits = {%CREDITS%}</span>
-        </a>
-  
-        <p class="course__info">
-          🏬 Department: {%DESCRIPTION%}
-        </p>
       </figure>
     </div>
   </body>
